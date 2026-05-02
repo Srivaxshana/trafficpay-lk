@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F0F4F8">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="24dp">
+
+        <!-- Header -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#1a365d"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="24dp"
+            android:layout_marginBottom="24dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sri Lanka Police"
+                android:textColor="#FFFFFF"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Traffic Fine Payment"
+                android:textColor="#A0AEC0"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <!-- Card -->
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:elevation="4dp"
+            app:cardCornerRadius="12dp"
+            xmlns:app="http://schemas.android.com/apk/res-auto">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="20dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Pay Your Traffic Fine"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:textColor="#1a365d"
+                    android:layout_marginBottom="8dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Enter the details from your fine sheet"
+                    android:textSize="13sp"
+                    android:textColor="#718096"
+                    android:layout_marginBottom="20dp" />
+
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                    android:text="Fine Reference Number" android:textStyle="bold"
+                    android:textSize="13sp" android:layout_marginBottom="6dp" />
+                <EditText
+                    android:id="@+id/etReferenceNumber"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="e.g. TF-A1B2C3D4"
+                    android:inputType="text"
+                    android:textAllCaps="true"
+                    android:padding="12dp"
+                    android:background="@drawable/input_border"
+                    android:layout_marginBottom="16dp" />
+
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                    android:text="Category Code" android:textStyle="bold"
+                    android:textSize="13sp" android:layout_marginBottom="6dp" />
+                <EditText
+                    android:id="@+id/etCategoryCode"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="e.g. TC001"
+                    android:inputType="text"
+                    android:textAllCaps="true"
+                    android:padding="12dp"
+                    android:background="@drawable/input_border"
+                    android:layout_marginBottom="8dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="TC001=Speeding  TC002=Red Light  TC003=No Seat Belt\nTC004=Mobile  TC005=Drunk  TC006=No License"
+                    android:textSize="11sp"
+                    android:textColor="#A0AEC0"
+                    android:layout_marginBottom="16dp" />
+
+                <TextView
+                    android:id="@+id/tvError"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone"
+                    android:background="#FFF5F5"
+                    android:textColor="#C53030"
+                    android:padding="10dp"
+                    android:layout_marginBottom="12dp"
+                    android:textSize="13sp" />
+
+                <ProgressBar
+                    android:id="@+id/progressBar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:visibility="gone"
+                    android:layout_marginBottom="8dp" />
+
+                <Button
+                    android:id="@+id/btnSearch"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Find Fine"
+                    android:backgroundTint="#2b6cb0"
+                    android:textColor="#FFFFFF"
+                    android:padding="14dp" />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+    </LinearLayout>
+</ScrollView>

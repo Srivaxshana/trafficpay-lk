@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F0F4F8">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- Fine Details Card -->
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            app:cardCornerRadius="12dp"
+            android:elevation="4dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="20dp">
+
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                    android:text="Fine Details" android:textStyle="bold"
+                    android:textSize="16sp" android:textColor="#1a365d" android:layout_marginBottom="12dp" />
+
+                <include layout="@layout/row_detail" android:id="@+id/rowRef" />
+
+                <TextView android:id="@+id/tvRef" android:layout_width="match_parent" android:layout_height="wrap_content"
+                    android:textColor="#2b6cb0" android:textStyle="bold" android:fontFamily="monospace"
+                    android:textSize="15sp" android:layout_marginBottom="8dp" />
+
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Violation:" android:textColor="#718096" android:textSize="12sp" />
+                <TextView android:id="@+id/tvViolation" android:layout_width="match_parent" android:layout_height="wrap_content" android:textStyle="bold" android:textSize="14sp" android:layout_marginBottom="8dp" />
+
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Vehicle:" android:textColor="#718096" android:textSize="12sp" />
+                <TextView android:id="@+id/tvVehicle" android:layout_width="match_parent" android:layout_height="wrap_content" android:textStyle="bold" android:textSize="14sp" android:layout_marginBottom="8dp" />
+
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Driver:" android:textColor="#718096" android:textSize="12sp" />
+                <TextView android:id="@+id/tvDriver" android:layout_width="match_parent" android:layout_height="wrap_content" android:textStyle="bold" android:textSize="14sp" android:layout_marginBottom="8dp" />
+
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="District:" android:textColor="#718096" android:textSize="12sp" />
+                <TextView android:id="@+id/tvDistrict" android:layout_width="match_parent" android:layout_height="wrap_content" android:textStyle="bold" android:textSize="14sp" android:layout_marginBottom="8dp" />
+
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Officer:" android:textColor="#718096" android:textSize="12sp" />
+                <TextView android:id="@+id/tvOfficer" android:layout_width="match_parent" android:layout_height="wrap_content" android:textStyle="bold" android:textSize="14sp" android:layout_marginBottom="12dp" />
+
+                <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                    android:background="#F0FFF4" android:padding="12dp">
+                    <TextView android:layout_width="0dp" android:layout_height="wrap_content"
+                        android:layout_weight="1" android:text="Amount Due" android:textColor="#276749" android:textStyle="bold" />
+                    <TextView android:id="@+id/tvAmount" android:layout_width="wrap_content" android:layout_height="wrap_content"
+                        android:textColor="#276749" android:textStyle="bold" android:textSize="16sp" />
+                </LinearLayout>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <!-- Payment Card -->
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="12dp"
+            android:elevation="4dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="20dp">
+
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                    android:text="Card Details" android:textStyle="bold"
+                    android:textSize="16sp" android:textColor="#1a365d" android:layout_marginBottom="16dp" />
+
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                    android:text="Card Holder Name" android:textStyle="bold" android:textSize="13sp" android:layout_marginBottom="6dp" />
+                <EditText android:id="@+id/etCardHolder" android:layout_width="match_parent" android:layout_height="wrap_content"
+                    android:hint="Name on card" android:padding="12dp" android:background="@drawable/input_border" android:layout_marginBottom="14dp" />
+
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                    android:text="Card Number" android:textStyle="bold" android:textSize="13sp" android:layout_marginBottom="6dp" />
+                <EditText android:id="@+id/etCardNumber" android:layout_width="match_parent" android:layout_height="wrap_content"
+                    android:hint="1234 5678 9012 3456" android:inputType="number" android:maxLength="19"
+                    android:padding="12dp" android:background="@drawable/input_border" android:layout_marginBottom="14dp" />
+
+                <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                    android:orientation="horizontal" android:layout_marginBottom="14dp">
+                    <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content"
+                        android:layout_weight="1" android:orientation="vertical" android:layout_marginEnd="8dp">
+                        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                            android:text="Expiry Date" android:textStyle="bold" android:textSize="13sp" android:layout_marginBottom="6dp" />
+                        <EditText android:id="@+id/etExpiry" android:layout_width="match_parent" android:layout_height="wrap_content"
+                            android:hint="MM/YY" android:maxLength="5" android:padding="12dp" android:background="@drawable/input_border" />
+                    </LinearLayout>
+                    <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content"
+                        android:layout_weight="1" android:orientation="vertical">
+                        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                            android:text="CVV" android:textStyle="bold" android:textSize="13sp" android:layout_marginBottom="6dp" />
+                        <EditText android:id="@+id/etCvv" android:layout_width="match_parent" android:layout_height="wrap_content"
+                            android:hint="123" android:inputType="numberPassword" android:maxLength="3"
+                            android:padding="12dp" android:background="@drawable/input_border" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <TextView android:id="@+id/tvPayError" android:layout_width="match_parent" android:layout_height="wrap_content"
+                    android:visibility="gone" android:background="#FFF5F5" android:textColor="#C53030"
+                    android:padding="10dp" android:layout_marginBottom="12dp" android:textSize="13sp" />
+
+                <ProgressBar android:id="@+id/progressBarPay" android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" android:layout_gravity="center"
+                    android:visibility="gone" android:layout_marginBottom="8dp" />
+
+                <Button android:id="@+id/btnPay" android:layout_width="match_parent"
+                    android:layout_height="wrap_content" android:text="Pay Now"
+                    android:backgroundTint="#276749" android:textColor="#FFFFFF" android:padding="14dp" />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+    </LinearLayout>
+</ScrollView>

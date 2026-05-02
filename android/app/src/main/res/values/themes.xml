@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Theme.TrafficFines" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="colorPrimary">#1a365d</item>
+        <item name="colorPrimaryVariant">#2b6cb0</item>
+        <item name="colorOnPrimary">#FFFFFF</item>
+        <item name="colorSecondary">#276749</item>
+        <item name="colorOnSecondary">#FFFFFF</item>
+        <item name="android:statusBarColor">@color/colorPrimary</item>
+    </style>
+    <color name="colorPrimary">#1a365d</color>
+</resources>
