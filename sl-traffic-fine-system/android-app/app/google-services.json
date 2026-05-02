@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "978229786078",
+    "project_id": "traffic-fine-system-9ec98",
+    "storage_bucket": "traffic-fine-system-9ec98.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:978229786078:android:9de62953f808d651dc194f",
+        "android_client_info": {
+          "package_name": "com.slpolice.traffic_fine_app"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBr19dG0Syx5T2kBr07Xco_gY4N_fq1jXk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

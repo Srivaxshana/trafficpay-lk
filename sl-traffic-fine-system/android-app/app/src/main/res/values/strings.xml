@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">SL Traffic Fine</string>
+
+    <string-array name="vehicle_types">
+        <item>CAR</item>
+        <item>MOTORCYCLE</item>
+        <item>THREE_WHEEL</item>
+        <item>BUS</item>
+        <item>TRUCK</item>
+        <item>VAN</item>
+    </string-array>
+</resources>
