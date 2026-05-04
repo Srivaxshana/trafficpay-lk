@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/loginFragment">
+
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="com.slpolice.trafficfineapp.ui.login.LoginFragment"
+        android:label="Login"
+        android:layout="@layout/fragment_login">
+        <action
+            android:id="@+id/action_login_to_issueFine"
+            app:destination="@id/issueFineFragment"
+            app:popUpTo="@id/loginFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/issueFineFragment"
+        android:name="com.slpolice.trafficfineapp.ui.issuefine.IssueFineFragment"
+        android:label="Issue Fine"
+        android:layout="@layout/fragment_issue_fine">
+        <action
+            android:id="@+id/action_issueFine_to_myFines"
+            app:destination="@id/myFinesFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/myFinesFragment"
+        android:name="com.slpolice.trafficfineapp.ui.fines.MyFinesFragment"
+        android:label="My Fines"
+        android:layout="@layout/fragment_my_fines" />
+
+</navigation>

@@ -1,0 +1,32 @@
+# Firebase service account (NEVER commit this)
+**/firebase-service-account.json
+**/.env
+**/.env.local
+
+# Java / Maven
+target/
+*.class
+*.jar
+*.war
+
+# Node
+node_modules/
+dist/
+.vite/
+
+# Android
+*.apk
+*.aab
+*.keystore
+local.properties
+.gradle/
+build/
+
+# IDE
+.idea/
+*.iml
+.vscode/
+.DS_Store
+
+**/firebase*.json
+**/traffic-fine-system-*-firebase*.json
